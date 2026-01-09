@@ -4,7 +4,7 @@ from typing import Optional
 import logging
 import httpx
 
-from .feed import filter_bytes
+from ..feed import filter_bytes
 from .cache import fetch_with_cache, get_cache_size_mb
 
 logger = logging.getLogger(__name__)

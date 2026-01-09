@@ -1,0 +1,32 @@
+[cache]
+# Maximum age of cached entries in seconds (24 hours)
+max_age_seconds = 86400
+
+# Maximum cache directory size in MB
+max_size_mb = 500
+
+[network]
+# HTTP request timeout in seconds
+request_timeout_seconds = 30
+
+# Maximum feed payload size in MB
+max_payload_mb = 50
+
+[rate_limiting]
+# Maximum requests per client IP
+requests_per_window = 100
+
+# Time window for rate limiting in seconds (1 hour)
+window_seconds = 3600
+
+[server]
+# Default server host
+host = "127.0.0.1"
+
+# Default server port
+port = 8000
+
+[user_agent]
+# Contact information for User-Agent header
+# Should be a valid email or URL for webmasters to contact
+contact_info = "an-impolite-user@example.invalid"

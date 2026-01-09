@@ -1,0 +1,21 @@
+[project]
+name = "python-rss-filter"
+version = "0.1.0"
+description = "Fetch, filter RSS items by <itunes:keywords>, and republish the feed (also with a CLI for offline use)."
+readme = "README.md"
+requires-python = ">=3.8"
+
+[project.dependencies]
+requests = "*"
+lxml = "*"
+fastapi = "*"
+httpx = "*"
+uvicorn = "*"
+tomli = "*"  # For parsing TOML config on Python < 3.11
+
+[project.optional-dependencies]
+test = ["pytest"]
+
+[project.scripts]
+rss-filter = "rss_filter.cli:main"
+rss-filter-server = "rss_filter.server:run_server"

@@ -1,0 +1,7 @@
+requests
+lxml
+pytest
+fastapi
+httpx
+uvicorn
+tomli
